@@ -1,0 +1,190 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "cancel": "Cancel",
+    "save": "Save",
+    "edit": "Edit",
+    "delete": "Delete",
+    "back": "Back",
+    "next": "Next",
+    "submit": "Submit",
+    "close": "Close",
+    "yes": "Yes",
+    "no": "No",
+    "ok": "OK"
+  },
+  "navigation": {
+    "home": "Home",
+    "marketplace": "Marketplace",
+    "investments": "Investments",
+    "dashboard": "Dashboard",
+    "login": "Login",
+    "register": "Register",
+    "logout": "Logout",
+    "profile": "Profile"
+  },
+  "landing": {
+    "hero": {
+      "title": "SLICE THE WAY YOU",
+      "titleHighlight": "LEND",
+      "subtitle": "THE FINE-PRINT ENDS TODAY",
+      "subtitle2": "TAKE CONTROL OF YOUR MONEY AND TIME",
+      "needLoan": "Need a Loan?",
+      "wantInvest": "Want to Invest?",
+      "connectionsMade": "connections made so far"
+    },
+    "stats": {
+      "loansFunded": "Loans Funded",
+      "activeBorrowers": "Active Borrowers",
+      "defaultRate": "Default Rate",
+      "avgFundingTime": "Avg. Funding Time"
+    },
+    "features": {
+      "title": "Why Choose Kshetra Kredit?",
+      "subtitle": "Experience the future of peer-to-peer lending with our innovative platform",
+      "competitiveReturns": {
+        "title": "Competitive Returns",
+        "description": "Earn up to 8% annual returns by funding carefully vetted loans in Indian Rupees"
+      },
+      "trustBased": {
+        "title": "Trust-Based Lending",
+        "description": "Advanced trust scoring system ensures reliable borrower matching"
+      },
+      "fastFunding": {
+        "title": "Fast Funding",
+        "description": "Get your loan funded in hours, not weeks"
+      },
+      "communityDriven": {
+        "title": "Community-Driven",
+        "description": "Connect directly with real people in your community"
+      }
+    },
+    "howItWorks": {
+      "title": "How It Works",
+      "borrowers": {
+        "title": "For Borrowers",
+        "steps": [
+          "Create your loan request with purpose and terms",
+          "Get matched with potential lenders",
+          "Receive funding within hours",
+          "Make simple monthly repayments"
+        ],
+        "cta": "Start Borrowing"
+      },
+      "lenders": {
+        "title": "For Lenders",
+        "steps": [
+          "Browse verified loan requests",
+          "Review borrower trust scores",
+          "Choose loans to fund",
+          "Earn returns as loans are repaid"
+        ],
+        "cta": "Start Investing"
+      }
+    },
+    "cta": {
+      "title": "Ready to Get Started?",
+      "subtitle": "Join thousands of users who have already transformed their financial future",
+      "button": "Get Started Today"
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Welcome Back",
+      "subtitle": "Sign in to your account",
+      "email": "Email",
+      "password": "Password",
+      "rememberMe": "Remember me",
+      "forgotPassword": "Forgot password?",
+      "signIn": "Sign In",
+      "noAccount": "Don't have an account?",
+      "signUp": "Sign up"
+    },
+    "register": {
+      "title": "Create Account",
+      "subtitle": "Get started with Kshetra Kredit",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "password": "Password",
+      "confirmPassword": "Confirm Password",
+      "role": "I want to",
+      "roleBorrower": "Borrow money",
+      "roleLender": "Invest money",
+      "agreeTerms": "I agree to the Terms of Service and Privacy Policy",
+      "createAccount": "Create Account",
+      "haveAccount": "Already have an account?",
+      "signIn": "Sign in"
+    }
+  },
+  "dashboard": {
+    "welcome": "Welcome back",
+    "overview": "Overview",
+    "activeLoans": "Active Loans",
+    "totalInvested": "Total Invested",
+    "monthlyReturns": "Monthly Returns",
+    "trustScore": "Trust Score",
+    "creditScore": "Credit Score",
+    "creditRating": "Credit Rating",
+    "excellent": "Excellent",
+    "good": "Good",
+    "fair": "Fair",
+    "poor": "Poor"
+  },
+  "marketplace": {
+    "title": "Investment Opportunities",
+    "subtitle": "Browse and fund loan requests from verified borrowers",
+    "filterBy": "Filter by",
+    "amount": "Amount",
+    "term": "Term",
+    "trustScore": "Trust Score",
+    "purpose": "Purpose",
+    "fundLoan": "Fund This Loan",
+    "viewDetails": "View Details"
+  },
+  "loan": {
+    "amount": "Loan Amount",
+    "purpose": "Purpose",
+    "term": "Repayment Term",
+    "monthlyPayment": "Monthly Payment",
+    "interestRate": "Interest Rate",
+    "trustScore": "Trust Score",
+    "creditScore": "Credit Score",
+    "borrower": "Borrower",
+    "lender": "Lender",
+    "created": "Created",
+    "funded": "Funded",
+    "remaining": "Remaining",
+    "minAmount": "Minimum Amount",
+    "maxAmount": "Maximum Amount"
+  },
+  "fundModal": {
+    "title": "Fund This Loan",
+    "subtitle": "Support {{name}}'s \"{{purpose}}\" loan request",
+    "investmentAmount": "Investment Amount",
+    "investmentSummary": "Investment Summary",
+    "investment": "Investment",
+    "estimatedReturns": "Est. Returns",
+    "totalExpectedReturn": "Total Expected Return",
+    "securityNotice": "Security & Risk",
+    "securityText": "All investments carry risk. Past performance doesn't guarantee future results. Diversify your investments for better risk management.",
+    "fund": "Fund {{amount}}",
+    "processing": "Processing..."
+  },
+  "chatbot": {
+    "title": "AI Assistant",
+    "placeholder": "Ask me anything about loans, investments, or how to use the platform...",
+    "send": "Send",
+    "minimize": "Minimize",
+    "maximize": "Maximize",
+    "welcome": "Hi! I'm your AI assistant. How can I help you today?",
+    "suggestions": {
+      "createLoan": "How do I create a loan request?",
+      "checkSchedule": "How do I check my repayment schedule?",
+      "viewStats": "How do I view my loan statistics?",
+      "investMoney": "How do I invest money in loans?"
+    }
+  }
+}
