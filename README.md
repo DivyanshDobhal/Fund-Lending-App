@@ -1,239 +1,170 @@
-# Peer-to-Peer Micro-Lending Platform
+# P2P Micro-Lending Platform
 
-A modern, responsive fintech platform inspired by Slice.it's design, built with React, TypeScript, and Tailwind CSS.
+A peer-to-peer micro-lending application designed to foster financial inclusion by directly connecting individuals who need small loans with a community of lenders ready to help.
 
-## 🚀 Features
+## 🌟 Overview
 
-### Core Functionality
-- **Role-based Authentication**: Separate flows for Borrowers and Lenders
-- **Loan Marketplace**: Browse and fund loan requests
-- **Real-time Progress Tracking**: Live funding progress bars
-- **Trust Score System**: Dynamic trust assessment for borrowers
-- **Responsive Design**: Mobile-first, works seamlessly on all devices
+Our platform empowers individuals by providing accessible credit while creating a trustworthy, community-driven financial ecosystem. We facilitate transparent connections between borrowers and lenders, making financial inclusion a reality for underserved communities.
 
-### User Flows
+## ✨ Features
 
-#### Borrowers
-- Create loan requests with amount, purpose, and repayment terms
-- Track loan status (PENDING → FUNDING → FUNDED → REPAID)
-- View funding progress with animated progress bars
-- Access personalized dashboard
+### For Borrowers
+- **Easy Profile Creation** - Set up your profile with essential information and verification
+- **Loan Request Posting** - Create detailed loan requests for education, business, or personal needs
+- **Transparent Process** - Clear terms, interest rates, and repayment schedules
+- **Secure Transactions** - End-to-end encrypted payment processing
+- **Repayment Tracking** - Monitor your loan status and payment history
 
-#### Lenders
-- Browse marketplace of loan requests 
-- Fund loans with custom amounts
-- Track investment portfolio
-- View loan performance and status
+### For Lenders
+- **Browse Loan Requests** - Explore various lending opportunities in your community
+- **Risk Assessment Tools** - Access transparent risk indicators and borrower profiles
+- **Quick Funding** - Fund loans with just a few clicks
+- **Portfolio Management** - Track your lending portfolio and returns
+- **Community Impact** - See the direct impact of your contributions
 
-## 🛠 Tech Stack
-
-- **Frontend**: React 18 + TypeScript + Vite
-- **Styling**: Tailwind CSS + shadcn/ui components
-- **Animations**: Framer Motion
-- **HTTP Client**: Axios
-- **Routing**: React Router v6
-- **State Management**: React Context + Custom Hooks
-
-## 🎨 Design System
-
-- **Colors**: HSL-based semantic tokens
-- **Typography**: Inter font with bold headings
-- **Gradients**: Primary, secondary, and success gradients
-- **Components**: Reusable shadcn/ui components with custom variants
-- **Animations**: Smooth transitions and micro-interactions
-
-## 📁 Project Structure
-
-```
-src/
-├── components/           # Reusable UI components
-│   ├── ui/              # shadcn/ui components
-│   ├── FundLoanModal.tsx
-│   ├── LoanCard.tsx
-│   ├── Navbar.tsx
-│   ├── ProgressBar.tsx
-│   └── TrustScoreBadge.tsx
-├── contexts/            # React contexts
-│   └── AuthContext.tsx
-├── hooks/               # Custom hooks
-│   ├── use-mobile.tsx
-│   └── use-toast.ts
-├── lib/                 # Utilities
-│   ├── api.ts           # API client
-│   └── utils.ts         # Helper functions
-├── pages/               # Page components
-│   ├── BorrowerDashboard.tsx
-│   ├── Index.tsx
-│   ├── Investments.tsx
-│   ├── Landing.tsx
-│   ├── Login.tsx
-│   ├── Marketplace.tsx
-│   ├── NotFound.tsx
-│   └── Register.tsx
-└── main.tsx            # App entry point
-```
+### Platform Features
+- **Complete Lifecycle Management** - From loan origination to final repayment
+- **Security First** - Advanced encryption and fraud protection
+- **Transparent Operations** - Clear fee structure and risk disclosure
+- **Mobile Responsive** - Access from any device, anywhere
+- **Real-time Notifications** - Stay updated on loan status and opportunities
 
 ## 🚀 Getting Started
 
 ### Prerequisites
-- Node.js 18+ 
+- Node.js (v18 or higher)
 - npm or yarn
+- Git
 
 ### Installation
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
-   cd peer-lending-platform
+   git clone https://github.com/your-username/p2p-lending-platform.git
+   cd p2p-lending-platform
    ```
 
 2. **Install dependencies**
    ```bash
    npm install
+   # or
+   yarn install
    ```
 
-3. **Start development server**
+3. **Set up environment variables**
+   ```bash
+   cp .env.example .env.local
+   ```
+   
+   Update `.env.local` with your configuration:
+   ```env
+   NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+   NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+   NEXT_PUBLIC_APP_URL=http://localhost:3000
+   ```
+
+4. **Run the development server**
    ```bash
    npm run dev
+   # or
+   yarn dev
    ```
 
-4. **Open in browser**
-   ```
-   http://localhost:8080
-   ```
+5. **Open your browser**
+   Navigate to [http://localhost:3000](http://localhost:3000) to see the application.
 
-## 🔧 API Integration
+## 🏗️ Tech Stack
 
-The frontend is designed to integrate with a Node.js + Express + Prisma backend:
+- **Frontend**: Next.js, React, TypeScript, Tailwind CSS
+- **Backend**: Next.js API Routes, Supabase
+- **Database**: PostgreSQL (via Supabase)
+- **Authentication**: Supabase Auth
+- **Payments**: [Payment Provider - e.g., Stripe, PayPal]
+- **Deployment**: Vercel
 
-### Authentication Endpoints
-- `POST /api/auth/register` - User registration
-- `POST /api/auth/login` - User login
 
-### Loan Endpoints  
-- `GET /api/loans` - Fetch marketplace loans
-- `GET /api/loans/:id` - Get loan details
-- `POST /api/loans` - Create loan request (borrowers)
-- `POST /api/loans/:id/fund` - Fund a loan (lenders)
+## 🔐 Security & Compliance
 
-### Dashboard Endpoints
-- `GET /api/dashboard/my-loans` - Borrower's loans
-- `GET /api/dashboard/my-investments` - Lender's investments
+- **Data Encryption**: All sensitive data encrypted in transit and at rest
+- **Identity Verification**: Multi-step borrower verification process
+- **Fraud Detection**: Advanced algorithms to detect and prevent fraud
+- **Regulatory Compliance**: Adheres to local financial regulations
+- **Privacy Protection**: GDPR and privacy law compliant
 
-### Environment Variables
-Create a `.env` file:
-```env
-VITE_API_BASE_URL=http://localhost:3000/api
-```
+## 🤝 How It Works
 
-## 🎮 Demo Mode
+### For Borrowers
+1. **Sign Up** - Create your account with basic information
+2. **Complete Profile** - Add verification documents and financial information
+3. **Request Loan** - Post your loan request with purpose and amount
+4. **Get Funded** - Connect with lenders who believe in your cause
+5. **Repay** - Make scheduled payments through the platform
 
-The app includes demo accounts for easy testing:
+### For Lenders
+1. **Create Account** - Sign up as a lender with identity verification
+2. **Browse Opportunities** - Explore loan requests that match your criteria
+3. **Assess Risk** - Review borrower profiles and risk indicators
+4. **Fund Loans** - Contribute to loans that align with your values
+5. **Track Returns** - Monitor your portfolio and social impact
 
-### Demo Accounts
-- **Borrower**: demo-borrower@example.com / password123
-- **Lender**: demo-lender@example.com / password123
+## 🛠️ Development
 
-### Demo Data
-When backend is unavailable, the app uses mock data to demonstrate functionality.
+### Available Scripts
 
-## 🔐 Authentication
-
-- JWT-based authentication
-- Token stored in localStorage
-- Automatic token refresh
-- Protected routes with role-based access
-- Persistent login sessions
-
-## 🎯 Trust Score System
-
-Dynamic trust assessment based on:
-- **Profile Completeness**: Verified user information
-- **Verification Status**: Email and identity verification  
-- **Loan Purpose**: Clarity and legitimacy of loan request
-- **Platform History**: Previous loan performance
-
-Trust levels: Low (🔴) | Medium (🟡) | High (🟢)
-
-## 📱 Responsive Design
-
-- **Mobile-first**: Optimized for mobile devices
-- **Breakpoints**: sm (640px), md (768px), lg (1024px), xl (1280px)
-- **Navigation**: Collapsible mobile menu
-- **Touch-friendly**: Large tap targets and gestures
-
-## ✨ Key Components
-
-### LoanCard
-Displays loan information with funding progress, trust score, and action buttons.
-
-### ProgressBar
-Animated funding progress with customizable styling and labels.
-
-### TrustScoreBadge  
-Visual trust score indicator with color-coded levels.
-
-### FundLoanModal
-Modal for lenders to fund loans with amount input and confirmation.
-
-## 🎨 Styling Guidelines
-
-- Use semantic color tokens from `index.css`
-- Follow design system defined in `tailwind.config.ts`
-- Prefer component variants over custom styles
-- Use HSL color format for all colors
-- Implement smooth transitions for all interactive elements
-
-## 🚀 Deployment
-
-### Build for Production
 ```bash
-npm run build
+npm run dev          # Start development server
+npm run build        # Build for production
+npm run start        # Start production server
+npm run lint         # Run ESLint
+npm run type-check   # Run TypeScript checks
 ```
 
-### Preview Production Build
-```bash
-npm run preview
-```
+### Contributing
 
-### Deploy
-The `dist/` folder contains the production build ready for deployment to any static hosting service.
+We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details.
 
-## 🧪 Testing
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
-### Manual Testing Scenarios
-1. **Registration Flow**: Create borrower and lender accounts
-2. **Loan Creation**: Create loan request as borrower
-3. **Funding Flow**: Fund loan as lender
-4. **Progress Tracking**: Watch real-time progress updates
-5. **Mobile Responsiveness**: Test on various screen sizes
+## 📊 Roadmap
 
-## 🔮 Future Enhancements
+- [ ] **Phase 1**: Core lending platform with basic features
+- [ ] **Phase 2**: Advanced risk assessment and credit scoring
+- [ ] **Phase 3**: Mobile application development
+- [ ] **Phase 4**: Integration with traditional banking systems
+- [ ] **Phase 5**: AI-powered loan matching and recommendations
+- [ ] **Phase 6**: International expansion and multi-currency support
 
-- Real-time notifications
-- Advanced filtering and search
-- Credit scoring integration  
-- Payment processing
-- Chat/messaging system
-- KYC verification
-- Analytics dashboard
+## 📈 Impact
+
+*Help us track our community impact:*
+- **Total Loans Funded**: $0 (launching soon)
+- **Active Borrowers**: 0
+- **Active Lenders**: 0
+- **Success Rate**: -% (to be calculated)
+
+## 🆘 Support
+
+- **Documentation**: [docs.yourplatform.com](https://docs.yourplatform.com)
+- **FAQ**: Check our [Frequently Asked Questions](FAQ.md)
+- **Support Email**: support@yourplatform.com
+- **Community**: Join our [Discord](https://discord.gg/yourlink)
 
 ## 📄 License
 
-MIT License - see LICENSE file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🤝 Contributing
+## 🙏 Acknowledgments
 
-1. Fork the repository
-2. Create feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit changes (`git commit -m 'Add amazing feature'`)
-4. Push to branch (`git push origin feature/amazing-feature`)
-5. Open Pull Request
-
-## 📞 Support
-
-For questions or support, please open an issue on GitHub.
+- Thanks to all early contributors and beta testers
+- Special recognition to financial inclusion advocates
+- Appreciation for open-source libraries that made this possible
 
 ---
 
-Built with ❤️ for the future of peer-to-peer lending.
+**🌍 Building Financial Inclusion, One Loan at a Time**
+
+*Made with ❤️ for the community*
